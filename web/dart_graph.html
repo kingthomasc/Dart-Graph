@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html ng-app>
+  <head>
+    <meta charset="utf-8">
+    <title>Dart graph</title>
+    <link rel="stylesheet" href="dart_graph.css">
+  </head>
+  <body dart-graph>
+    <h1>Dart graph</h1>
+    
+    <label for="symbol">Symbol: </label>
+    <input name="symbol" ng-model="ctrl.symbol" value="GOOG">
+    <button ng-click="ctrl.display_data()">Submit</button>
+    
+    <line-graph width="800" height="250" src="table.csv"></line-graph>
+
+    <script type="application/dart" src="dart_graph.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>

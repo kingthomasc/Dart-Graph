@@ -1,0 +1,7 @@
+name: dart_graph
+author: Thomas King
+version: 0.0.1
+description: A sample web application
+dependencies:
+  angular: any
+  browser: any
